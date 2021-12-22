@@ -13,7 +13,7 @@ And then import Microbot as follows:
 import microbot as mb
 ```
 
-Here is Code Example:
+Here is a Bot Program Example:
 
 ```python
 import microbot as mb
