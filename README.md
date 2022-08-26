@@ -20,7 +20,7 @@ import microbot as mb
 
 myBot = mb.MicroBot({
     "Name" : "Futura",
-    "Symbol" : ":o",
+    "Symbol" : "🌬️",
     "ID" : "1",
     "Type" : "Assistance Bot"
 })
@@ -28,8 +28,8 @@ myBot = mb.MicroBot({
 myBot.greet()
 
 while(True):
-    question = myBot.ask("What you wanna search?")
-    myBot.searchWeb(question)
+    if(myBot.askBool("Do you want to search someting?")):
+        myBot.searchWeb(myBot.ask("What you wanna search?"))
     myBot.askQuit("Would you like to leave?")
 ```
 
